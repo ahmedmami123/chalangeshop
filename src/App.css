@@ -1,0 +1,1351 @@
+.App {
+  text-align: center;
+}
+/*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*************************************NAVBAR*************************************
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+.navbar {
+  background-color: white;
+  width: 100%;
+  height: 150px;
+
+  border-bottom: 0.2px rgba(0, 0, 0, 0.062) solid;
+  display: flex;
+  flex-direction: column;
+
+  top: 0%;
+
+  width: 100%;
+
+  padding: 0px, 100px;
+  position: fixed;
+  line-height: 75px;
+  z-index: 9999999999999999999;
+}
+.navbar-height {
+  height: 75px !important;
+  transition: 1s;
+}
+.navbar .bar1 {
+  margin-top: 25px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+.navbar .bar1-height {
+  margin-top: 10px !important;
+}
+.navbar .bar1 .divbar0 {
+  width: 25%;
+  height: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.navbar .bar1 .divbar1 {
+  width: 25%;
+  height: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar .bar1 .divbar0 .p {
+  margin-left: 8px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.navbar .bar1 .divbar0 .span {
+  color: #f7a813;
+  margin-left: 5px;
+}
+.navbar .bar1 .divbar2 {
+  width: 30%;
+  height: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.navbar .bar1 .divbar2 input {
+  width: 100%;
+  height: 38px;
+  outline: none;
+  border: 0.5px rgba(128, 128, 128, 0.397) solid;
+}
+.navbar .bar1 .divbar2 svg {
+  position: absolute;
+  margin-left: 380px;
+  fill: rgba(128, 128, 128, 0.658);
+}
+.navbar .bar1 .divbar1 .panier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(190, 185, 185, 0.541);
+  border-radius: 50%;
+}
+.navbar .bar1 .divbar1 .panier .paniernumber {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7a813;
+  border-radius: 50%;
+  margin-top: -30px;
+  margin-left: 30px;
+  font-weight: 500;
+  color: white;
+}
+
+.navbar .bar1 .divbar1 .user {
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
+.navbar .bar1 .divbar1 .user svg {
+  color: rgb(128, 119, 119);
+}
+.navbar .bar1 .divbar1 .user .text {
+  height: 50px;
+  width: 130px;
+
+  margin-bottom: 10px;
+  display: flex;
+
+  flex-direction: column;
+}
+.navbar .bar1 .divbar1 .user .text .p1 {
+  height: 50%;
+  width: 120px;
+
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.767);
+  margin-bottom: 1px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 15px;
+}
+.navbar .bar1 .divbar1 .user .text .p2 {
+  width: 100px;
+
+  height: 50%;
+
+  margin-left: 15px;
+  color: rgba(0, 0, 0, 0.767);
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.navbar .bar1 .divbar1 .user .text .p2 p {
+  font-size: 14px;
+}
+
+.navbar .bar2 {
+  width: 85%;
+  position: absolute;
+  height: 60px;
+  background-color: #f7a813;
+  top: 120px;
+  left: 90px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 1s;
+}
+.navbar .bar2-height {
+  display: none;
+  transition: 1s;
+}
+.navbar .bar2 div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .bar2 div p {
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+}
+.navbar .bar2 div svg {
+  color: white;
+  margin-top: 6px;
+  margin-left: 4px;
+}
+/*
+       *
+       *
+       *
+       *
+       *
+       *
+       *
+       *
+       *
+       *
+       *
+       *
+       *
+       **
+       **
+       *
+       *
+       ***********************************Home****************************************
+       *
+       *
+       *
+       *
+       *
+       *
+       *
+       *
+       *
+       *
+       *
+       *
+       *
+       *
+       *
+       *
+       ***
+       ****
+
+       ***
+       *
+       *
+       *
+       */
+.home {
+  width: 100%;
+  height: auto;
+
+  margin-top: 150px;
+}
+.home .homediv1 {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .homediv1 img {
+  width: 100%;
+  height: 100%;
+}
+.home .homediv1 .hd {
+  width: 90%;
+  height: 400px;
+
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 600px;
+}
+.home .homediv1 .hd .category {
+  width: 22%;
+  height: 90%;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+}
+.home .homediv1 .hd .category .img {
+  width: 100%;
+  height: 48%;
+  overflow: hidden;
+}
+.home .homediv1 .hd .category .img img {
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+.home .homediv1 .hd .category .img img:hover {
+  width: 105%;
+  height: 105%;
+}
+.home .homediv1 .hd .category .decription {
+  width: 100%;
+  height: 250px;
+
+  display: flex;
+  flex-direction: column;
+}
+.home .homediv1 .hd .category .decription h3 {
+  text-align: left;
+  margin-top: -1px;
+}
+.home .homediv1 .hd .category .decription .catdesc {
+  width: 100%;
+  height: 25px;
+  justify-content: flex-start;
+  align-items: center;
+
+  display: flex;
+}
+.home .homediv1 .hd .category .decription .catdesc p {
+  color: rgb(112, 108, 108);
+  font-size: 15px;
+}
+.home .homediv1 .hd .category .decription .catdesc svg {
+  margin-top: 3px;
+  margin-right: 5px;
+}
+.home .homediv1 .hd .category .decription button {
+  border: none;
+  background-color: #f7a813;
+  color: white;
+  height: 40px;
+  width: 180px;
+  margin-top: 22px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.pub {
+  width: 100%;
+  height: 150px;
+
+  margin-top: 340px;
+  display: flex;
+  justify-content: space-around;
+}
+.pub .pub1 {
+  width: 46%;
+  height: 100%;
+  display: flex;
+
+  justify-content: center;
+}
+.pub .pub1 img {
+  width: 100%;
+  height: 100%;
+}
+.pub .pub1 div {
+  width: 0%;
+  height: 150px;
+  transition: 1s;
+  position: absolute;
+}
+.pub .pub1:hover div {
+  width: 46%;
+  height: 150px;
+  background-color: rgba(2, 2, 2, 0.397);
+}
+.produit {
+  width: 100%;
+  height: 700px;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.produit .produit1 {
+  width: 90%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.produit .produit1 .proddiv1 {
+  width: 75%;
+  height: 70%;
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.produit .produit1 .proddiv1 .div1 {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px rgba(128, 128, 128, 0.678) solid;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.produit .produit1 .proddiv1 .div1 p {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.774);
+}
+.produit .produit1 .proddiv1 .div1 div {
+  width: 85px;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.produit .produit1 .proddiv1 .div1 div span {
+  width: 40px;
+  height: 40px;
+  background-color: #d1ccc4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.produit .produit1 .proddiv1 .div2 {
+  width: 100%;
+  height: 91%;
+  border: 1px rgba(128, 128, 128, 0.678) solid;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: none;
+  border-left: none;
+
+  align-items: center;
+  overflow: hidden;
+}
+.produit .produit1 .proddiv1 .div2 .div {
+  width: 226.6px;
+  border: 1px rgba(128, 128, 128, 0.678) solid;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: none;
+  overflow: hidden;
+  border-bottom: none;
+}
+.produit .produit1 .proddiv1 .div2 .div .divdescri {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.produit .produit1 .proddiv1 .div2 .div .divdescri p {
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.produit .produit1 .proddiv1 .div2 .div .divdescri span {
+  text-align: left;
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.produit .produit1 .proddiv1 .div2 .div .img {
+  width: 100%;
+  height: 200px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.produit .produit1 .proddiv1 .div2 .div .img img {
+  width: 80%;
+  height: auto;
+}
+.produit .produit1 .proddiv1 .div2 .div .icon {
+  width: 40px;
+  height: 120px;
+  margin-top: 120px;
+  margin-left: 180px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+
+  justify-content: space-between;
+  overflow: hidden;
+}
+.produit .produit1 .proddiv1 .div2 .div .icon .div1 {
+  background-color: rgba(128, 128, 128, 0.774);
+  border-bottom: none;
+  width: 100%;
+  height: 30%;
+  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.25s;
+}
+.produit .produit1 .proddiv1 .div2 .div:hover .icon .div1 {
+  margin-left: 0px;
+}
+.produit .produit1 .proddiv1 .div2 .div .icon .div2 {
+  background-color: rgba(128, 128, 128, 0.774);
+  width: 100%;
+  height: 30%;
+  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.produit .produit1 .proddiv1 .div2 .div:hover .icon .div2 {
+  margin-left: 0px;
+}
+.produit .produit1 .proddiv1 .div2 .div .icon .div3 {
+  background-color: rgba(128, 128, 128, 0.774);
+  width: 100%;
+  height: 30%;
+  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.6s;
+}
+.produit .produit1 .proddiv1 .div2 .div:hover .icon .div3 {
+  margin-left: 0px;
+}
+
+.produit .produit1 .proddiv2 {
+  width: 22%;
+  height: 100%;
+}
+.produit .produit1 .proddiv2 .div1 {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px rgba(128, 128, 128, 0.678) solid;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.produit .produit1 .proddiv2 .div1 div {
+  width: 85px;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.produit .produit1 .proddiv2 .div1 div span {
+  width: 40px;
+  height: 40px;
+  background-color: #d1ccc4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.produit .produit1 .proddiv2 .div1 p {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.774);
+}
+.produit .produit1 .proddiv2 .div2 {
+  width: 100%;
+  height: 91%;
+
+  border: 2px #f7a813 solid;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+.produit .produit1 .proddiv2 .div2 .div22 {
+  width: 100%;
+  height: 20%;
+  border-bottom: 1px #85838079 solid;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.produit .produit1 .proddiv2 .div2 .div22 .div221 {
+  width: 150px;
+  height: 60%;
+
+  display: flex;
+  flex-direction: column;
+}
+.produit .produit1 .proddiv2 .div2 .div22 .div221 p {
+  margin-left: 10px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 500;
+}
+.produit .produit1 .proddiv2 .div2 .div22 .div221 span {
+  margin-left: 10px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 700;
+}
+.produit .produit1 .proddiv2 .div2 .div22 .div222 {
+  width: 100px;
+  height: 70%;
+}
+.produit .produit1 .proddiv2 .div2 .div22 .div222 img {
+  width: 100%;
+  height: 100%;
+}
+.start {
+  size: 20px;
+  margin-left: 7px;
+  margin-top: 10px;
+}
+
+.pubvideo {
+  width: 100%;
+  height: 400px;
+  background-color: #f7a813;
+  margin-top: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+.pubvideo video {
+  width: 1400px;
+}
+.pubvideo .pubtext {
+  width: 600px;
+  height: 300px;
+
+  position: absolute;
+  margin-left: 80px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.pubvideo .pubtext .p {
+  text-align: left;
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  height: 40px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.pubvideo .pubtext .p .p2 {
+  font-size: 40px;
+  font-weight: 800;
+}
+.pubvideo .pubtext .p .p3 {
+  font-size: 12px;
+}
+.pubvideo .pubtext .pp {
+  width: 100px;
+  background-color: #f7a813;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pubvideo .pubtext .pp .p4 {
+  font-size: 15px;
+  background-color: #f7a813;
+  color: white;
+  font-weight: 600;
+}
+.pubblicite2 {
+  width: 90%;
+  height: 180px;
+
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.pubblicite2 .div {
+  width: 320px;
+  height: 100%;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pubblicite2 .div img {
+  width: 100%;
+  height: 100%;
+}
+.pubblicite2 .div div {
+  width: 0px;
+  height: 180px;
+
+  position: absolute;
+  transition: 1s;
+}
+.pubblicite2 .div:hover div {
+  width: 320px;
+  height: 180px;
+  background-color: rgba(7, 7, 7, 0.562);
+  position: absolute;
+}
+.carousel {
+  width: 90%;
+  height: 80px;
+
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.carousel div {
+  background-color: #d1ccc4;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  width: 100%;
+  background-color: rgb(39, 34, 34);
+  height: 350px;
+  margin-top: 20px;
+}
+footer .div1 {
+  width: 100%;
+  height: 75%;
+  border-bottom: 1px rgba(255, 255, 255, 0.425) solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .div1 div {
+  width: 290px;
+  height: 100%;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+footer .div1 div h3 {
+  color: white;
+  text-align: left;
+}
+footer .div1 div .para {
+  width: 100%;
+  height: 40px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer .div1 div .para div {
+  width: auto;
+  color: rgba(255, 255, 255, 0.63);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+}
+.pp {
+  font-size: 11px;
+  font-weight: 500;
+}
+footer .div1 div .para div input {
+  margin-bottom: 10px;
+  width: 200px;
+  margin-top: 40px;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+footer .div1 div .para div button {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  width: 100px;
+  height: 107%;
+  border: none;
+  background-color: #f7a813;
+  color: white;
+}
+
+footer .div1 div .para div svg {
+  margin-right: 5px;
+}
+
+footer .div1 div .media {
+  width: 90%;
+  height: 50px;
+
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .div1 div .media div {
+  width: 50px;
+  height: 50px;
+  background-color: #c7c3bf;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .div2 {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .div2 .d1 {
+  width: 20% !important;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .div2 .d1 {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .div2 .d2 {
+  width: 20%;
+  height: 50%;
+  color: #c7c3bf;
+}
+
+.listproduit {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.listproduit .list1 {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 180px;
+  color: black;
+  font-weight: 600;
+  background-color: #c7c3bf49;
+}
+.listproduit .list1 h3 {
+  margin-left: 93px;
+}
+.listproduit .list2 {
+  width: 95%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+margin-top: 40px;
+ 
+
+}
+.listproduit .list2 .pd1 {
+  width: 72%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.listproduit .list2 .pd1 .d1 {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 10px;
+}
+.listproduit .list2 .pd1 .d1 div {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+.listproduit .list2 .pd1 .d1 div label {
+  margin-right: 5px;
+}
+.listproduit .list2 .pd1 .d1 div select {
+  height: 70%;
+  border: 0.5px rgba(128, 128, 128, 0.432) solid;
+  outline: none;
+  color: #4d4a49;
+  font-size: 12px;
+}
+.listproduit .list2 .pd1 .d1 div .button {
+  width: 30px;
+  height: 30px;
+  background-color: #c7c3bf8e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  overflow: hidden;
+  margin-right: 1px;
+}
+.listproduit .list2 .pd1 .d1 div .buttonliste {
+
+  background-color:#f7a813;
+  
+}
+.listproduit .list2 .pd1 .d2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.listproduit .list2 .pd1 .d2 .divp {
+  width: 270px;
+  height: 350px !important;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+ margin-right: 35px;
+  margin-bottom: 20px;
+  align-items: center;
+  border: 1px rgba(43, 41, 41, 0.116) solid;
+}
+.listproduit .list2 .pd1 .d2 .divp .divshop {
+  background-color: transparent;
+  position: absolute;
+  width: 50px;
+  height: 150px;
+  margin-left: 200px;
+  margin-top: -300px !important;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.listproduit .list2 .pd1 .d2 .divp .divshop .bt1 {
+  margin-left: 100px;
+  margin-top: 11px;
+  width: 40px;
+  height: 40px;
+  background-color: #c7c3bf;
+  border: none;
+  margin-bottom: 3px;
+  transition: 0.25s;
+}
+.listproduit .list2 .pd1 .d2 .divp .divshop .bt2 {
+  margin-left: 100px;
+  width: 40px;
+  height: 40px;
+  background-color: #c7c3bf;
+  border: none;
+  margin-bottom: 3px;
+  transition: 0.5s;
+}
+.listproduit .list2 .pd1 .d2 .divp .divshop .bt3 {
+  margin-left: 100px;
+  width: 40px;
+  height: 40px;
+  background-color: #c7c3bf;
+  border: none;
+  transition: 0.75s;
+}
+.listproduit .list2 .pd1 .d2 .divp:hover .divshop .bt1 {
+  margin-left: 0px;
+}
+.listproduit .list2 .pd1 .d2 .divp:hover .divshop .bt2 {
+  margin-left: 0px;
+}
+.listproduit .list2 .pd1 .d2 .divp:hover .divshop .bt3 {
+  margin-left: 0px;
+}
+
+.listproduit .list2 .pd1 .d2 .divp .img {
+  width: 100%;
+  height: 150px !important;
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.listproduit .list2 .pd1 .d2 .divp .img img {
+  width: 160px !important;
+}
+.listproduit .list2 .pd1 .d2 .divp .divD {
+  width: 100%;
+  height: 250px !important;
+
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.listproduit .list2 .pd1 .d2 .divp .divD p {
+  font-size: 18px;
+  width: 250px;
+  color: rgba(0, 0, 0, 0.616);
+  text-align: center;
+
+  font-weight: 600;
+}
+.listproduit .list2 .pd1 .d2 .divp .divD .p1{
+width: 100%;
+height: 60px;
+background-color: #ffffff;
+color: #f7a813;
+overflow: hidden;
+font-weight: 700;
+}
+.listproduit .list2 .pd1 .d2 .divp .divD .p2{
+
+  width: 100%;
+  height: 30px;
+  background-color: #ffffff;
+  overflow: hidden;
+  font-weight: 500;
+  }
+
+.listproduit .list2 .pd1 .d2 .divp .divD .bg {
+  overflow: hidden;
+  width: auto;
+  background-color: rgb(255, 250, 250);
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  height: 40px;
+}
+
+.listproduit .list2 .pd1 .d2 .divp .divD .bg .start2 {
+  overflow: hidden;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+font-size: 0px;
+
+}
+.listproduit .list2 .pd1 .d2 .divp .divD .price {
+  overflow: hidden;
+  width: 100%;
+background-color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  height: 80px;
+  font-size: 20px;
+}
+
+
+
+
+
+.listproduit .list2 .pd1 .d2 .divp1 {
+  width: 100%;
+  height: 250px !important;
+  background-color: white;
+  display: flex;
+
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  align-items: center;
+  border: 1px rgba(43, 41, 41, 0.116) solid;
+}
+.listproduit .list2 .pd1 .d2 .divp1 .divshop {
+  background-color: transparent;
+  position: absolute;
+  width: 50px;
+  height: 150px;
+  margin-left: 650px;
+  margin-top: 0px !important;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.listproduit .list2 .pd1 .d2 .divp1 .divshop .bt1 {
+  margin-left: 100px;
+  margin-top: 11px;
+  width: 40px;
+  height: 40px;
+  background-color: #c7c3bf;
+  border: none;
+  margin-bottom: 3px;
+  transition: 0.25s;
+}
+.listproduit .list2 .pd1 .d2 .divp1 .divshop .bt2 {
+  margin-left: 100px;
+  width: 40px;
+  height: 40px;
+  background-color: #c7c3bf;
+  border: none;
+  margin-bottom: 3px;
+  transition: 0.5s;
+}
+.listproduit .list2 .pd1 .d2 .divp1 .divshop .bt3 {
+  margin-left: 100px;
+  width: 40px;
+  height: 40px;
+  background-color: #c7c3bf;
+  border: none;
+  transition: 0.75s;
+}
+.listproduit .list2 .pd1 .d2 .divp1:hover .divshop .bt1 {
+  margin-left: 0px;
+}
+.listproduit .list2 .pd1 .d2 .divp1:hover .divshop .bt2 {
+  margin-left: 0px;
+}
+.listproduit .list2 .pd1 .d2 .divp1:hover .divshop .bt3 {
+  margin-left: 0px;
+}
+
+.listproduit .list2 .pd1 .d2 .divp1 .img {
+  width: 300px;
+  height: 200px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  
+}
+.listproduit .list2 .pd1 .d2 .divp1 .img img {
+  width: 220px !important;
+}
+.listproduit .list2 .pd1 .d2 .divp1 .divD {
+  width: 100%;
+  height: 250px !important;
+
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.listproduit .list2 .pd1 .d2 .divp1 .divD p {
+  font-size: 18px;
+  width: 200px;
+  
+  color: rgba(0, 0, 0, 0.616);
+  text-align: center;
+
+  font-weight: 600;
+}
+.listproduit .list2 .pd1 .d2 .divp1 .divD .p1{
+width: 50%;
+height: 60px;
+background-color: #ffffff;
+color: #f7a813;
+overflow: hidden;
+font-weight: 700;
+}
+.listproduit .list2 .pd1 .d2 .divp1 .divD .p2{
+
+  width: 100%;
+  height: 30px;
+  background-color: #ffffff;
+  overflow: hidden;
+  font-weight: 500;
+  }
+
+.listproduit .list2 .pd1 .d2 .divp1 .divD .bg {
+  overflow: hidden;
+  width: auto;
+  background-color: rgb(255, 250, 250);
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  height: 40px;
+}
+
+.listproduit .list2 .pd1 .d2 .divp1 .divD .bg .start2 {
+  overflow: hidden;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+font-size: 0px;
+
+}
+.listproduit .list2 .pd1 .d2 .divp1 .divD .price {
+  overflow: hidden;
+  width: 100%;
+background-color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  height: 80px;
+  font-size: 20px;
+}
+
+.listproduit .list2 .pd2 {
+  width: 25%;
+  height: 500px;
+  border: 1px rgba(128, 128, 128, 0.178) solid;
+  
+  display: flex;
+  flex-direction: column;
+}
+.listproduit .list2 .pd2 .categoryname {
+width: 100%;
+height: 55px;
+background-color: whitesmoke;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+
+font-size: 18px;
+font-weight: 600;
+
+}
+.listproduit .list2 .pd2 .brands {
+  width: 100%;
+  height: 55px;
+  overflow: hidden;
+display: flex;
+
+flex-direction: column;
+}
+
+
+
+
+.listproduit .list2 .pd2 .brands .check{
+  width: 80%;
+  height: 50px;
+
+  margin-left: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.listproduit .list2 .pd2 .brands .check .pbrand1 {
+  margin-left: 20px;
+text-align: left;
+font-weight:400;
+color: #f7a813;
+
+}
+.listproduit .list2 .pd2 .brands .check1{
+ margin-left: 0px;
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center;
+}
+.listproduit .list2 .pd2 .brands .check1 button{
+width: 30px;
+height: 30px;
+border: none;
+background-color: #4b484875;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.listproduit .list2 .pd2 .brands .check1 button:hover{
+ background-color:#f7a813 ;
+  }
+.listproduit .list2 .pd2 .brands .check svg{
+fill: #ffffffbb;
+}
+
+
+
+.listproduit .list2 .pd2 .brands {
+  width: 100%;
+  height: 55px;
+  overflow: hidden;
+display: flex;
+
+flex-direction: column;
+}
+
+.listproduit .list2 .pd2 .brands2 {
+height: auto;
+}
+
+
+
+.listproduit .list2 .pd2 .brands2 .check{
+  width: 80%;
+  height: 50px;
+margin-top: -5px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.listproduit .list2 .pd2 .brands2 .check .pbrand1 {
+  margin-left: 0px;
+text-align: left;
+font-weight:400;
+color: #f7a813;
+
+}
+.listproduit .list2 .pd2 .brands2 .check1{
+ 
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center;
+}
+.listproduit .list2 .pd2 .brands2 .check1 button{
+width: 30px;
+height: 30px;
+border: none;
+background-color: #4b484875;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.listproduit .list2 .pd2 .brands2 .check1 button:hover{
+ background-color:#f7a813 ;
+  }
+.listproduit .list2 .pd2 .brands2 .check svg{
+fill: #ffffffbb;
+}
+a{
+  text-decoration: none;
+  
+}
